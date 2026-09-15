@@ -1,0 +1,289 @@
+{
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "epochs": 3,
+  "models": {
+    "bert-base-multilingual-cased": {
+      "test_acc": 0.6411428571428571,
+      "test_macro_f1": 0.48135228376276207,
+      "per_lang_f1": {
+        "en": 0.5038132700466988,
+        "fr": 0.45263283312277247,
+        "ht": 0.3527156797396319
+      },
+      "n_params_M": 177.9,
+      "train_seconds": 111.3,
+      "cpu_latency_ms_p50": 2387.41,
+      "conformal": {
+        "marginal": {
+          "overall_covered": 4778,
+          "overall_n": 5250,
+          "avg_set_size": 2.179,
+          "per_class": {
+            "not_related": {
+              "n": 1264,
+              "covered": 1156
+            },
+            "weather_disaster": {
+              "n": 1462,
+              "covered": 1316
+            },
+            "aid_request": {
+              "n": 1401,
+              "covered": 1297
+            },
+            "infrastructure": {
+              "n": 19,
+              "covered": 0
+            },
+            "other_related": {
+              "n": 1104,
+              "covered": 1009
+            }
+          },
+          "per_lang": {
+            "en": {
+              "n": 3636,
+              "covered": 3302
+            },
+            "fr": {
+              "n": 216,
+              "covered": 199
+            },
+            "ht": {
+              "n": 1391,
+              "covered": 1270
+            }
+          }
+        },
+        "class_conditional": {
+          "overall_covered": 4791,
+          "overall_n": 5250,
+          "avg_set_size": 3.012,
+          "per_class": {
+            "not_related": {
+              "n": 1264,
+              "covered": 1152
+            },
+            "weather_disaster": {
+              "n": 1462,
+              "covered": 1330
+            },
+            "aid_request": {
+              "n": 1401,
+              "covered": 1282
+            },
+            "infrastructure": {
+              "n": 19,
+              "covered": 18
+            },
+            "other_related": {
+              "n": 1104,
+              "covered": 1009
+            }
+          },
+          "per_lang": {
+            "en": {
+              "n": 3636,
+              "covered": 3318
+            },
+            "fr": {
+              "n": 216,
+              "covered": 198
+            },
+            "ht": {
+              "n": 1391,
+              "covered": 1268
+            }
+          }
+        },
+        "language_conditional": {
+          "overall_covered": 4780,
+          "overall_n": 5250,
+          "avg_set_size": 2.182,
+          "per_class": {
+            "not_related": {
+              "n": 1264,
+              "covered": 1159
+            },
+            "weather_disaster": {
+              "n": 1462,
+              "covered": 1316
+            },
+            "aid_request": {
+              "n": 1401,
+              "covered": 1297
+            },
+            "infrastructure": {
+              "n": 19,
+              "covered": 0
+            },
+            "other_related": {
+              "n": 1104,
+              "covered": 1008
+            }
+          },
+          "per_lang": {
+            "en": {
+              "n": 3636,
+              "covered": 3319
+            },
+            "fr": {
+              "n": 216,
+              "covered": 199
+            },
+            "ht": {
+              "n": 1391,
+              "covered": 1255
+            }
+          }
+        }
+      }
+    },
+    "xlm-roberta-base": {
+      "test_acc": 0.6493333333333333,
+      "test_macro_f1": 0.4751964285624163,
+      "per_lang_f1": {
+        "en": 0.49379154328897207,
+        "fr": 0.4427566515323658,
+        "ht": 0.3710146008077043
+      },
+      "n_params_M": 278.0,
+      "train_seconds": 128.9,
+      "cpu_latency_ms_p50": 2281.69,
+      "conformal": {
+        "marginal": {
+          "overall_covered": 4767,
+          "overall_n": 5250,
+          "avg_set_size": 2.154,
+          "per_class": {
+            "not_related": {
+              "n": 1264,
+              "covered": 1157
+            },
+            "weather_disaster": {
+              "n": 1462,
+              "covered": 1348
+            },
+            "aid_request": {
+              "n": 1401,
+              "covered": 1283
+            },
+            "infrastructure": {
+              "n": 19,
+              "covered": 8
+            },
+            "other_related": {
+              "n": 1104,
+              "covered": 971
+            }
+          },
+          "per_lang": {
+            "en": {
+              "n": 3636,
+              "covered": 3306
+            },
+            "fr": {
+              "n": 216,
+              "covered": 198
+            },
+            "ht": {
+              "n": 1391,
+              "covered": 1256
+            }
+          }
+        },
+        "class_conditional": {
+          "overall_covered": 4777,
+          "overall_n": 5250,
+          "avg_set_size": 2.776,
+          "per_class": {
+            "not_related": {
+              "n": 1264,
+              "covered": 1153
+            },
+            "weather_disaster": {
+              "n": 1462,
+              "covered": 1337
+            },
+            "aid_request": {
+              "n": 1401,
+              "covered": 1274
+            },
+            "infrastructure": {
+              "n": 19,
+              "covered": 18
+            },
+            "other_related": {
+              "n": 1104,
+              "covered": 995
+            }
+          },
+          "per_lang": {
+            "en": {
+              "n": 3636,
+              "covered": 3319
+            },
+            "fr": {
+              "n": 216,
+              "covered": 198
+            },
+            "ht": {
+              "n": 1391,
+              "covered": 1253
+            }
+          }
+        },
+        "language_conditional": {
+          "overall_covered": 4762,
+          "overall_n": 5250,
+          "avg_set_size": 2.152,
+          "per_class": {
+            "not_related": {
+              "n": 1264,
+              "covered": 1158
+            },
+            "weather_disaster": {
+              "n": 1462,
+              "covered": 1348
+            },
+            "aid_request": {
+              "n": 1401,
+              "covered": 1281
+            },
+            "infrastructure": {
+              "n": 19,
+              "covered": 8
+            },
+            "other_related": {
+              "n": 1104,
+              "covered": 967
+            }
+          },
+          "per_lang": {
+            "en": {
+              "n": 3636,
+              "covered": 3296
+            },
+            "fr": {
+              "n": 216,
+              "covered": 203
+            },
+            "ht": {
+              "n": 1391,
+              "covered": 1256
+            }
+          }
+        }
+      }
+    }
+  },
+  "linear_student_same_host": {
+    "cpu_latency_ms_p50": 0.013,
+    "test_macro_f1": 0.4668677453287152
+  },
+  "rapl": {
+    "available": false
+  },
+  "energy_note": "energy_mJ = cpu_latency_ms_p50 * 65 (same-host TDP model, 65W); RAPL microjoules used if available"
+}

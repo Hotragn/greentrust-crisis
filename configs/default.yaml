@@ -1,0 +1,32 @@
+# YAML view of src/config.py:ExperimentConfig
+# Edit either this file (then load it programmatically) OR edit src/config.py directly.
+
+random_state: 42
+test_size: 0.20
+calibration_size: 0.25
+
+# TF-IDF (teacher) — high-capacity
+teacher_max_features: 30000
+teacher_ngram_range: [1, 2]
+teacher_min_df: 3
+
+# TF-IDF (student) — MI-pruned
+student_max_features: 5000
+student_ngram_range: [1, 2]
+student_min_df: 3
+
+# Classifier
+teacher_C: 0.3       # strong L2 to prevent teacher overfitting
+student_C: 0.5
+
+# Distillation (Hinton et al. 2015)
+distill_temperature: 6.0
+distill_alpha: 0.3   # 30% soft-label loss, 70% hard-label loss
+distill_epochs: 10
+
+# Conformal prediction
+conformal_alpha: 0.10    # target coverage = 1 - alpha = 0.90
+conformal_method: aps    # "score" | "aps" | "raps"
+
+# Energy measurement
+energy_repeats: 200

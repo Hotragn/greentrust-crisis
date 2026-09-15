@@ -1,0 +1,21 @@
+# Core ML / data science
+scikit-learn>=1.3
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+pyarrow>=12.0
+
+# Visualization
+matplotlib>=3.7
+seaborn>=0.12
+
+# System / energy monitoring
+psutil>=5.9
+
+# API server (optional — only if you want to serve the trained model)
+fastapi>=0.100
+pydantic>=2.0
+uvicorn>=0.22
+
+# Hugging Face datasets (only used by scripts/download_data.py)
+datasets>=2.0

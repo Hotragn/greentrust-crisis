@@ -1,0 +1,88 @@
+{
+  "note": "Per-method Clopper-Pearson CIs (in cr_conformal.json) can OVERLAP even when a paired test shows a significant difference; McNemar/paired-bootstrap are the correct comparison on shared test items.",
+  "coverage_comparisons": {
+    "infra_marginal_vs_classcond": {
+      "n": 19,
+      "A_only": 0,
+      "B_only": 7,
+      "p": 0.01562,
+      "significant": true
+    },
+    "infra_marginal_vs_ours": {
+      "n": 19,
+      "A_only": 0,
+      "B_only": 3,
+      "p": 0.25,
+      "significant": false
+    },
+    "infra_ours_vs_classcond": {
+      "n": 19,
+      "A_only": 0,
+      "B_only": 4,
+      "p": 0.125,
+      "significant": false
+    },
+    "french_marginal_vs_langcond": {
+      "n": 216,
+      "A_only": 0,
+      "B_only": 16,
+      "p": 3e-05,
+      "significant": true
+    }
+  },
+  "infra_delta_classcond_minus_marginal": {
+    "delta": 0.368,
+    "ci95": [
+      0.158,
+      0.579
+    ],
+    "frac_positive": 0.9998
+  },
+  "infra_delta_ours_minus_marginal": {
+    "delta": 0.158,
+    "ci95": [
+      0.0,
+      0.316
+    ],
+    "frac_positive": 0.9601
+  },
+  "setsize_ours_vs_classcond": {
+    "classcond_mean": 3.029,
+    "ours_mean": 2.684,
+    "delta_cc_minus_ours": 0.345,
+    "ci95": [
+      0.333,
+      0.358
+    ],
+    "frac_positive": 1.0,
+    "ours_smaller_n": 1813,
+    "ours_larger_n": 0,
+    "equal_n": 3437,
+    "total": 5250
+  },
+  "cross_backbone_infra_flips": {
+    "linear_student": {
+      "n": 19,
+      "A_only": 0,
+      "B_only": 7,
+      "p": 0.01562,
+      "significant": true
+    },
+    "mBERT": {
+      "n": 19,
+      "marginal_covered": 0,
+      "classcond_covered": 18,
+      "net_flips_ge": 18,
+      "p_bound": 1e-05,
+      "significant": true
+    },
+    "XLM-R": {
+      "n": 19,
+      "marginal_covered": 8,
+      "classcond_covered": 18,
+      "net_flips_ge": 10,
+      "p_bound": 0.00195,
+      "significant": true
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "model": "distilbert-base-multilingual-cased",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "n_params_M": 135.33,
+  "train_n": 14435,
+  "epochs": 5,
+  "train_seconds": 113.0,
+  "test_acc": 0.6422857142857142,
+  "test_macro_f1": 0.49523365748478004,
+  "per_lang": {
+    "en": {
+      "n": 3636,
+      "f1": 0.5022719095888728
+    },
+    "fr": {
+      "n": 216,
+      "f1": 0.431158290984378
+    },
+    "ht": {
+      "n": 1391,
+      "f1": 0.42895581569151736
+    }
+  },
+  "mondrian": {
+    "marginal": {
+      "coverage": 0.9038095238095238,
+      "avg_set_size": 2.134857142857143,
+      "per_class": {
+        "not_related": 0.9106012658227848,
+        "weather_disaster": 0.9076607387140903,
+        "aid_request": 0.9086366880799429,
+        "infrastructure": 0.3157894736842105,
+        "other_related": 0.894927536231884
+      },
+      "per_lang": {
+        "en": {
+          "n": 3636,
+          "coverage": 0.9051155115511551
+        },
+        "fr": {
+          "n": 216,
+          "coverage": 0.8842592592592593
+        },
+        "ht": {
+          "n": 1391,
+          "coverage": 0.9029475197699497
+        }
+      }
+    },
+    "class_conditional": {
+      "coverage": 0.9043809523809524,
+      "avg_set_size": 2.9024761904761904,
+      "per_class": {
+        "not_related": 0.9153481012658228,
+        "weather_disaster": 0.9103967168262654,
+        "aid_request": 0.8986438258386866,
+        "infrastructure": 1.0,
+        "other_related": 0.8894927536231884
+      }
+    },
+    "language_conditional": {
+      "coverage": 0.9043809523809524,
+      "avg_set_size": 2.1413333333333333,
+      "per_lang": {
+        "en": {
+          "n": 3636,
+          "coverage": 0.9056655665566556
+        },
+        "fr": {
+          "n": 216,
+          "coverage": 0.9074074074074074
+        },
+        "ht": {
+          "n": 1391,
+          "coverage": 0.9000718907260963
+        }
+      }
+    }
+  },
+  "latency_ms_gpu_p50": 3.6067154724150896,
+  "latency_ms_cpu_p50": 687.4574099201709,
+  "energy_mJ_cpu_per_inference": 44684.73164481111,
+  "tdp_assumed_w": 65.0,
+  "note": "CPU latency*TDP for apples-to-apples energy vs the linear student; latency measured."
+}

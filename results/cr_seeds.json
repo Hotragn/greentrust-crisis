@@ -1,0 +1,229 @@
+{
+  "student_macro_f1": 0.4669,
+  "seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "models": {
+    "mBERT": {
+      "macro_f1_mean": 0.4849,
+      "macro_f1_sd": 0.0028,
+      "macro_f1_min": 0.4818,
+      "macro_f1_max": 0.4879,
+      "delta_vs_student_mean": 0.018,
+      "seeds_with_significant_advantage": "1/4",
+      "infra_marginal_range": [
+        0.105,
+        0.316
+      ],
+      "infra_classcond_range": [
+        0.842,
+        0.947
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "macro_f1": 0.4818,
+          "acc": 0.6499,
+          "paired_vs_student": {
+            "delta": 0.0149,
+            "ci95": [
+              -0.0074,
+              0.033
+            ],
+            "significant": false,
+            "frac_positive": 0.928
+          },
+          "infra_marginal": "2/19",
+          "infra_marginal_cov": 0.105,
+          "infra_classcond": "18/19",
+          "infra_classcond_cov": 0.947,
+          "overall_marginal": 0.8954,
+          "overall_classcond": 0.9076,
+          "set_marginal": 2.226,
+          "set_classcond": 2.748
+        },
+        {
+          "seed": 1,
+          "macro_f1": 0.4879,
+          "acc": 0.64,
+          "paired_vs_student": {
+            "delta": 0.0211,
+            "ci95": [
+              0.0005,
+              0.0396
+            ],
+            "significant": true,
+            "frac_positive": 0.9785
+          },
+          "infra_marginal": "4/19",
+          "infra_marginal_cov": 0.211,
+          "infra_classcond": "16/19",
+          "infra_classcond_cov": 0.842,
+          "overall_marginal": 0.9082,
+          "overall_classcond": 0.9097,
+          "set_marginal": 2.126,
+          "set_classcond": 2.543
+        },
+        {
+          "seed": 2,
+          "macro_f1": 0.4864,
+          "acc": 0.6478,
+          "paired_vs_student": {
+            "delta": 0.0194,
+            "ci95": [
+              -0.001,
+              0.0369
+            ],
+            "significant": false,
+            "frac_positive": 0.967
+          },
+          "infra_marginal": "2/19",
+          "infra_marginal_cov": 0.105,
+          "infra_classcond": "18/19",
+          "infra_classcond_cov": 0.947,
+          "overall_marginal": 0.9099,
+          "overall_classcond": 0.9114,
+          "set_marginal": 2.165,
+          "set_classcond": 2.998
+        },
+        {
+          "seed": 3,
+          "macro_f1": 0.4833,
+          "acc": 0.6427,
+          "paired_vs_student": {
+            "delta": 0.0164,
+            "ci95": [
+              -0.0043,
+              0.0341
+            ],
+            "significant": false,
+            "frac_positive": 0.943
+          },
+          "infra_marginal": "6/19",
+          "infra_marginal_cov": 0.316,
+          "infra_classcond": "18/19",
+          "infra_classcond_cov": 0.947,
+          "overall_marginal": 0.9109,
+          "overall_classcond": 0.9116,
+          "set_marginal": 2.17,
+          "set_classcond": 2.712
+        }
+      ]
+    },
+    "XLM-R": {
+      "macro_f1_mean": 0.4846,
+      "macro_f1_sd": 0.0091,
+      "macro_f1_min": 0.4738,
+      "macro_f1_max": 0.4945,
+      "delta_vs_student_mean": 0.0177,
+      "seeds_with_significant_advantage": "2/4",
+      "infra_marginal_range": [
+        0.0,
+        0.105
+      ],
+      "infra_classcond_range": [
+        0.895,
+        1.0
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "macro_f1": 0.4945,
+          "acc": 0.6537,
+          "paired_vs_student": {
+            "delta": 0.0277,
+            "ci95": [
+              0.0054,
+              0.0459
+            ],
+            "significant": true,
+            "frac_positive": 0.9915
+          },
+          "infra_marginal": "0/19",
+          "infra_marginal_cov": 0.0,
+          "infra_classcond": "17/19",
+          "infra_classcond_cov": 0.895,
+          "overall_marginal": 0.9048,
+          "overall_classcond": 0.9042,
+          "set_marginal": 2.1,
+          "set_classcond": 2.695
+        },
+        {
+          "seed": 1,
+          "macro_f1": 0.481,
+          "acc": 0.6421,
+          "paired_vs_student": {
+            "delta": 0.014,
+            "ci95": [
+              -0.0073,
+              0.0326
+            ],
+            "significant": false,
+            "frac_positive": 0.915
+          },
+          "infra_marginal": "1/19",
+          "infra_marginal_cov": 0.053,
+          "infra_classcond": "19/19",
+          "infra_classcond_cov": 1.0,
+          "overall_marginal": 0.9099,
+          "overall_classcond": 0.911,
+          "set_marginal": 2.247,
+          "set_classcond": 3.014
+        },
+        {
+          "seed": 2,
+          "macro_f1": 0.4889,
+          "acc": 0.6436,
+          "paired_vs_student": {
+            "delta": 0.022,
+            "ci95": [
+              0.0008,
+              0.0397
+            ],
+            "significant": true,
+            "frac_positive": 0.978
+          },
+          "infra_marginal": "2/19",
+          "infra_marginal_cov": 0.105,
+          "infra_classcond": "18/19",
+          "infra_classcond_cov": 0.947,
+          "overall_marginal": 0.9135,
+          "overall_classcond": 0.9162,
+          "set_marginal": 2.168,
+          "set_classcond": 2.885
+        },
+        {
+          "seed": 3,
+          "macro_f1": 0.4738,
+          "acc": 0.6427,
+          "paired_vs_student": {
+            "delta": 0.007,
+            "ci95": [
+              -0.0137,
+              0.0247
+            ],
+            "significant": false,
+            "frac_positive": 0.7705
+          },
+          "infra_marginal": "0/19",
+          "infra_marginal_cov": 0.0,
+          "infra_classcond": "19/19",
+          "infra_classcond_cov": 1.0,
+          "overall_marginal": 0.9149,
+          "overall_classcond": 0.9126,
+          "set_marginal": 2.22,
+          "set_classcond": 2.906
+        }
+      ]
+    }
+  },
+  "separation_across_all_seeds": {
+    "marginal_max": 0.316,
+    "classcond_min": 0.842,
+    "n_runs": 8,
+    "separated": false
+  }
+}

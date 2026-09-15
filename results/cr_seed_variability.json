@@ -1,0 +1,142 @@
+{
+  "n_runs": 14,
+  "n_architectures": 4,
+  "runs": [
+    {
+      "architecture": "Distilled linear",
+      "run": "student",
+      "marginal": "10/19",
+      "marginal_cov": 0.526,
+      "classcond": "17/19",
+      "classcond_cov": 0.895
+    },
+    {
+      "architecture": "DistilBERT",
+      "run": "run1",
+      "marginal": "6/19",
+      "marginal_cov": 0.316,
+      "classcond": "19/19",
+      "classcond_cov": 1.0
+    },
+    {
+      "architecture": "mBERT",
+      "run": "runA",
+      "marginal": "0/19",
+      "marginal_cov": 0.0,
+      "classcond": "18/19",
+      "classcond_cov": 0.947
+    },
+    {
+      "architecture": "XLM-R",
+      "run": "runA",
+      "marginal": "8/19",
+      "marginal_cov": 0.421,
+      "classcond": "18/19",
+      "classcond_cov": 0.947
+    },
+    {
+      "architecture": "mBERT",
+      "run": "runB",
+      "marginal": "10/19",
+      "marginal_cov": 0.526,
+      "classcond": "19/19",
+      "classcond_cov": 1.0
+    },
+    {
+      "architecture": "XLM-R",
+      "run": "runB",
+      "marginal": "7/19",
+      "marginal_cov": 0.368,
+      "classcond": "17/19",
+      "classcond_cov": 0.895
+    },
+    {
+      "architecture": "mBERT",
+      "run": "seed0",
+      "marginal": "2/19",
+      "marginal_cov": 0.105,
+      "classcond": "18/19",
+      "classcond_cov": 0.947
+    },
+    {
+      "architecture": "mBERT",
+      "run": "seed1",
+      "marginal": "4/19",
+      "marginal_cov": 0.211,
+      "classcond": "16/19",
+      "classcond_cov": 0.842
+    },
+    {
+      "architecture": "mBERT",
+      "run": "seed2",
+      "marginal": "2/19",
+      "marginal_cov": 0.105,
+      "classcond": "18/19",
+      "classcond_cov": 0.947
+    },
+    {
+      "architecture": "mBERT",
+      "run": "seed3",
+      "marginal": "6/19",
+      "marginal_cov": 0.316,
+      "classcond": "18/19",
+      "classcond_cov": 0.947
+    },
+    {
+      "architecture": "XLM-R",
+      "run": "seed0",
+      "marginal": "0/19",
+      "marginal_cov": 0.0,
+      "classcond": "17/19",
+      "classcond_cov": 0.895
+    },
+    {
+      "architecture": "XLM-R",
+      "run": "seed1",
+      "marginal": "1/19",
+      "marginal_cov": 0.053,
+      "classcond": "19/19",
+      "classcond_cov": 1.0
+    },
+    {
+      "architecture": "XLM-R",
+      "run": "seed2",
+      "marginal": "2/19",
+      "marginal_cov": 0.105,
+      "classcond": "18/19",
+      "classcond_cov": 0.947
+    },
+    {
+      "architecture": "XLM-R",
+      "run": "seed3",
+      "marginal": "0/19",
+      "marginal_cov": 0.0,
+      "classcond": "19/19",
+      "classcond_cov": 1.0
+    }
+  ],
+  "marginal_range": [
+    0.0,
+    0.526
+  ],
+  "classcond_range": [
+    0.842,
+    1.0
+  ],
+  "methods_overlap": false,
+  "classcond_meets_target_strict": "10/14",
+  "classcond_at_or_above_17of19": "13/14",
+  "discreteness_note": "At n=19 only k/19 is attainable and 0.90 falls between 17/19=0.895 and 18/19=0.947, so exact attainment of 0.90 is unobservable; we report runs reaching 17/19 (closest attainable to target) or better.",
+  "worst_classcond": {
+    "architecture": "mBERT",
+    "run": "seed1",
+    "covered": "16/19",
+    "cov": 0.842,
+    "ci95": [
+      0.604,
+      0.966
+    ],
+    "ci_includes_target": true
+  },
+  "claim": "Across 14 model-runs spanning 4 architectures, marginal conformal's infrastructure coverage spans 0.000-0.526 and class-conditional's spans 0.842-1.000: the two never overlap. Class-conditional reaches 17/19 (=0.895, the closest attainable value to the 0.90 target at n=19) or better in 13/14 runs; the single exception (mBERT seed1, 16/19) has a 95% CI that still includes 0.90."
+}

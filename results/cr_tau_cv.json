@@ -1,0 +1,142 @@
+{
+  "protocol": "20x5-fold stratified CV inside the calibration set (6562 msgs); thresholds fit on K-1 folds, evaluated on the held-out fold. Test set untouched until tau* was fixed. TWO pre-specified rules reported.",
+  "rule_A_aggressive": {
+    "rule": "(A) aggressive: largest tau with CV infra coverage >= 0.9",
+    "tau": 15,
+    "test": {
+      "tau": 15,
+      "infra_cov": 0.789,
+      "overall_cov": 0.907,
+      "avg_set": 2.856
+    }
+  },
+  "rule_B_one_se_recommended": {
+    "rule": "(B) one-SE rule: largest tau with CV infra coverage - 1 SE >= 0.9",
+    "tau": 10,
+    "test": {
+      "tau": 10,
+      "infra_cov": 0.895,
+      "overall_cov": 0.907,
+      "avg_set": 2.902
+    }
+  },
+  "selection_rule": "(B) one-SE rule: largest tau with CV infra coverage - 1 SE >= 0.9",
+  "tau_star": 10,
+  "cv_curve": [
+    {
+      "tau": 0,
+      "cv_infra_cov": 0.953,
+      "cv_infra_sd": 0.0977,
+      "cv_overall_cov": 0.9012,
+      "cv_avg_set": 3.0184,
+      "cv_infra_se": 0.0098
+    },
+    {
+      "tau": 2,
+      "cv_infra_cov": 0.953,
+      "cv_infra_sd": 0.0977,
+      "cv_overall_cov": 0.9012,
+      "cv_avg_set": 2.9825,
+      "cv_infra_se": 0.0098
+    },
+    {
+      "tau": 5,
+      "cv_infra_cov": 0.915,
+      "cv_infra_sd": 0.1124,
+      "cv_overall_cov": 0.9011,
+      "cv_avg_set": 2.9355,
+      "cv_infra_se": 0.0112
+    },
+    {
+      "tau": 10,
+      "cv_infra_cov": 0.915,
+      "cv_infra_sd": 0.1124,
+      "cv_overall_cov": 0.9011,
+      "cv_avg_set": 2.8744,
+      "cv_infra_se": 0.0112
+    },
+    {
+      "tau": 15,
+      "cv_infra_cov": 0.909,
+      "cv_infra_sd": 0.1232,
+      "cv_overall_cov": 0.901,
+      "cv_avg_set": 2.8203,
+      "cv_infra_se": 0.0123
+    },
+    {
+      "tau": 20,
+      "cv_infra_cov": 0.8685,
+      "cv_infra_sd": 0.1504,
+      "cv_overall_cov": 0.9009,
+      "cv_avg_set": 2.7796,
+      "cv_infra_se": 0.015
+    },
+    {
+      "tau": 30,
+      "cv_infra_cov": 0.7945,
+      "cv_infra_sd": 0.1826,
+      "cv_overall_cov": 0.9006,
+      "cv_avg_set": 2.7197,
+      "cv_infra_se": 0.0183
+    },
+    {
+      "tau": 50,
+      "cv_infra_cov": 0.7175,
+      "cv_infra_sd": 0.1924,
+      "cv_overall_cov": 0.9004,
+      "cv_avg_set": 2.6593,
+      "cv_infra_se": 0.0192
+    },
+    {
+      "tau": 100,
+      "cv_infra_cov": 0.6875,
+      "cv_infra_sd": 0.1907,
+      "cv_overall_cov": 0.9003,
+      "cv_avg_set": 2.6063,
+      "cv_infra_se": 0.0191
+    },
+    {
+      "tau": 200,
+      "cv_infra_cov": 0.627,
+      "cv_infra_sd": 0.1998,
+      "cv_overall_cov": 0.9001,
+      "cv_avg_set": 2.5767,
+      "cv_infra_se": 0.02
+    },
+    {
+      "tau": 500,
+      "cv_infra_cov": 0.602,
+      "cv_infra_sd": 0.2019,
+      "cv_overall_cov": 0.9002,
+      "cv_avg_set": 2.5586,
+      "cv_infra_se": 0.0202
+    },
+    {
+      "tau": "inf",
+      "cv_infra_cov": 0.579,
+      "cv_infra_sd": 0.2023,
+      "cv_overall_cov": 0.901,
+      "cv_avg_set": 2.5543,
+      "cv_infra_se": 0.0202
+    }
+  ],
+  "test_at_tau_star": {
+    "infra_cov": 0.895,
+    "overall_cov": 0.907,
+    "avg_set": 2.902
+  },
+  "test_class_conditional": {
+    "infra_cov": 0.895,
+    "overall_cov": 0.907,
+    "avg_set": 3.029
+  },
+  "setsize_vs_classcond": {
+    "delta": 0.127,
+    "ci95": [
+      0.118,
+      0.137
+    ],
+    "frac_positive": 1.0,
+    "ours_larger_on": 0
+  }
+}

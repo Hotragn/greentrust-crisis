@@ -1,0 +1,25 @@
+{
+  "protocol": "p50 of 300 single-row predict_proba calls after 5 warm-ups, one CPU core, same host as the transformer timings; energy = 65.0 W x latency",
+  "tdp_w": 65.0,
+  "grid_kg_co2_per_kwh": 0.4,
+  "models": {
+    "teacher": {
+      "n_features": 28356,
+      "cpu_latency_ms_p50": 1.1913,
+      "energy_mJ_per_msg": 77.4345,
+      "co2_kg_per_year_at_1M": 3.14
+    },
+    "student_hard": {
+      "n_features": 5000,
+      "cpu_latency_ms_p50": 0.0284,
+      "energy_mJ_per_msg": 1.8492,
+      "co2_kg_per_year_at_1M": 0.075
+    },
+    "student_distilled": {
+      "n_features": 5000,
+      "cpu_latency_ms_p50": 0.0279,
+      "energy_mJ_per_msg": 1.8135,
+      "co2_kg_per_year_at_1M": 0.074
+    }
+  }
+}

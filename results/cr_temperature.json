@@ -1,0 +1,77 @@
+{
+  "note": "APS over-covers on a 5-class space at every T (cov ~0.96-0.98); the score rule is near-nominal (~0.90-0.91). This resolves Table 4's puzzle. Higher T flattens the softmax, slightly shrinking APS sets while coverage stays >=target; macro-F1 peaks at T=6.",
+  "sweep": [
+    {
+      "T": 1.0,
+      "macro_f1": 0.459,
+      "macro_f1_ci95": [
+        0.4472,
+        0.4714
+      ],
+      "score_coverage": 0.911,
+      "score_set": 2.89,
+      "aps_coverage": 0.969,
+      "aps_set": 4.1
+    },
+    {
+      "T": 2.0,
+      "macro_f1": 0.4558,
+      "macro_f1_ci95": [
+        0.4443,
+        0.4686
+      ],
+      "score_coverage": 0.907,
+      "score_set": 2.87,
+      "aps_coverage": 0.969,
+      "aps_set": 4.1
+    },
+    {
+      "T": 4.0,
+      "macro_f1": 0.4606,
+      "macro_f1_ci95": [
+        0.4478,
+        0.4753
+      ],
+      "score_coverage": 0.909,
+      "score_set": 2.81,
+      "aps_coverage": 0.965,
+      "aps_set": 4.0
+    },
+    {
+      "T": 6.0,
+      "macro_f1": 0.4669,
+      "macro_f1_ci95": [
+        0.4497,
+        0.4877
+      ],
+      "score_coverage": 0.909,
+      "score_set": 2.59,
+      "aps_coverage": 0.968,
+      "aps_set": 3.79
+    },
+    {
+      "T": 8.0,
+      "macro_f1": 0.4535,
+      "macro_f1_ci95": [
+        0.4431,
+        0.4642
+      ],
+      "score_coverage": 0.91,
+      "score_set": 2.46,
+      "aps_coverage": 0.978,
+      "aps_set": 3.68
+    },
+    {
+      "T": 10.0,
+      "macro_f1": 0.4545,
+      "macro_f1_ci95": [
+        0.4441,
+        0.4653
+      ],
+      "score_coverage": 0.91,
+      "score_set": 2.44,
+      "aps_coverage": 0.981,
+      "aps_set": 3.65
+    }
+  ]
+}

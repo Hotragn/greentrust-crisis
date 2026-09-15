@@ -1,0 +1,31 @@
+{
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "epochs": 3,
+  "models": {
+    "bert-base-multilingual-cased": {
+      "test_acc": 0.6293333333333333,
+      "test_macro_f1": 0.47573482989477067,
+      "per_lang_f1": {
+        "en": 0.4810720647479161,
+        "fr": 0.46794025881461393,
+        "ht": 0.40274041816226136
+      },
+      "n_params_M": 177.9,
+      "train_seconds": 110.3,
+      "cpu_latency_ms_p50": 2072.28
+    },
+    "xlm-roberta-base": {
+      "test_acc": 0.6443809523809524,
+      "test_macro_f1": 0.5004069789994714,
+      "per_lang_f1": {
+        "en": 0.511879563750244,
+        "fr": 0.49650512797586527,
+        "ht": 0.39677995236438207
+      },
+      "n_params_M": 278.0,
+      "train_seconds": 123.3,
+      "cpu_latency_ms_p50": 2024.46
+    }
+  }
+}

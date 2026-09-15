@@ -1,0 +1,95 @@
+{
+  "repeated_resplits": {
+    "n_splits": 300,
+    "test_frac": 0.444,
+    "infra_test_n_mean": 19.0,
+    "marginal_infra": {
+      "mean": 0.613,
+      "sd": 0.088,
+      "p05": 0.474,
+      "p95": 0.737
+    },
+    "class_cond_infra": {
+      "mean": 0.961,
+      "sd": 0.057,
+      "p05": 0.842,
+      "p95": 1.0
+    },
+    "ours_infra": {
+      "mean": 0.794,
+      "sd": 0.105,
+      "p05": 0.632,
+      "p95": 0.947
+    },
+    "frac_classcond_gt_marginal": 1.0,
+    "frac_ours_gt_marginal": 0.953,
+    "mean_delta_classcond_minus_marginal": 0.348,
+    "mean_delta_ours_minus_marginal": 0.181
+  },
+  "tau_sweep": [
+    {
+      "tau": 0,
+      "lambda_infra": 1.0,
+      "infra_cov": 0.895,
+      "overall_cov": 0.907,
+      "avg_set": 3.029
+    },
+    {
+      "tau": 5,
+      "lambda_infra": 0.828,
+      "infra_cov": 0.895,
+      "overall_cov": 0.907,
+      "avg_set": 2.96
+    },
+    {
+      "tau": 10,
+      "lambda_infra": 0.706,
+      "infra_cov": 0.895,
+      "overall_cov": 0.907,
+      "avg_set": 2.902
+    },
+    {
+      "tau": 20,
+      "lambda_infra": 0.545,
+      "infra_cov": 0.789,
+      "overall_cov": 0.907,
+      "avg_set": 2.815
+    },
+    {
+      "tau": 50,
+      "lambda_infra": 0.324,
+      "infra_cov": 0.684,
+      "overall_cov": 0.906,
+      "avg_set": 2.684
+    },
+    {
+      "tau": 100,
+      "lambda_infra": 0.194,
+      "infra_cov": 0.526,
+      "overall_cov": 0.906,
+      "avg_set": 2.617
+    },
+    {
+      "tau": 200,
+      "lambda_infra": 0.107,
+      "infra_cov": 0.474,
+      "overall_cov": 0.906,
+      "avg_set": 2.586
+    },
+    {
+      "tau": 500,
+      "lambda_infra": 0.046,
+      "infra_cov": 0.474,
+      "overall_cov": 0.906,
+      "avg_set": 2.566
+    },
+    {
+      "tau": "inf",
+      "lambda_infra": 0.0,
+      "infra_cov": 0.474,
+      "overall_cov": 0.909,
+      "avg_set": 2.566
+    }
+  ],
+  "note": "Repeated resplits keep the trained model fixed and re-partition the out-of-train pool; they characterise sampling variability of the coverage estimate (not a new guarantee). tau=0 is class-conditional, tau=inf is concept-conditional; tau=50 is the reported operating point."
+}

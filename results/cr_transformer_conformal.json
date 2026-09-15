@@ -1,0 +1,214 @@
+{
+  "alpha": 0.1,
+  "note": "Concept-smoothed uses tau=10 (Pareto region matching class-cond coverage at smaller sets).",
+  "mBERT": {
+    "macro_f1": 0.4757,
+    "infra_marginal": {
+      "cov": 0.526,
+      "ci95": [
+        0.289,
+        0.756
+      ],
+      "k_n": [
+        10,
+        19
+      ]
+    },
+    "infra_classcond": {
+      "cov": 1.0,
+      "ci95": [
+        0.824,
+        1.0
+      ],
+      "k_n": [
+        19,
+        19
+      ]
+    },
+    "infra_ours_tau10": {
+      "cov": 0.526,
+      "ci95": [
+        0.289,
+        0.756
+      ],
+      "k_n": [
+        10,
+        19
+      ]
+    },
+    "set_marginal": 2.224,
+    "set_classcond": 2.864,
+    "set_ours_tau10": 2.205,
+    "overall_marginal": 0.909,
+    "overall_classcond": 0.911,
+    "overall_ours_tau10": 0.909,
+    "french": {
+      "marginal": [
+        0.921,
+        [
+          0.877,
+          0.953
+        ],
+        216
+      ],
+      "lang_cond_na": "see linear; transformer uses class/marginal here"
+    },
+    "tau_sweep": [
+      {
+        "tau": 0,
+        "infra": 1.0,
+        "overall": 0.911,
+        "set": 2.864
+      },
+      {
+        "tau": 5,
+        "infra": 0.526,
+        "overall": 0.909,
+        "set": 2.238
+      },
+      {
+        "tau": 10,
+        "infra": 0.526,
+        "overall": 0.909,
+        "set": 2.205
+      },
+      {
+        "tau": 20,
+        "infra": 0.368,
+        "overall": 0.909,
+        "set": 2.187
+      },
+      {
+        "tau": 50,
+        "infra": 0.316,
+        "overall": 0.909,
+        "set": 2.177
+      },
+      {
+        "tau": 100,
+        "infra": 0.263,
+        "overall": 0.909,
+        "set": 2.174
+      },
+      {
+        "tau": "inf",
+        "infra": 0.211,
+        "overall": 0.911,
+        "set": 2.186
+      }
+    ],
+    "paired_f1_vs_student": {
+      "delta_mean": 0.0089,
+      "ci95": [
+        -0.012,
+        0.0271
+      ],
+      "frac_transformer_better": 0.8217
+    }
+  },
+  "XLM-R": {
+    "macro_f1": 0.5004,
+    "infra_marginal": {
+      "cov": 0.368,
+      "ci95": [
+        0.163,
+        0.616
+      ],
+      "k_n": [
+        7,
+        19
+      ]
+    },
+    "infra_classcond": {
+      "cov": 0.895,
+      "ci95": [
+        0.669,
+        0.987
+      ],
+      "k_n": [
+        17,
+        19
+      ]
+    },
+    "infra_ours_tau10": {
+      "cov": 0.421,
+      "ci95": [
+        0.203,
+        0.665
+      ],
+      "k_n": [
+        8,
+        19
+      ]
+    },
+    "set_marginal": 2.158,
+    "set_classcond": 2.684,
+    "set_ours_tau10": 2.106,
+    "overall_marginal": 0.909,
+    "overall_classcond": 0.907,
+    "overall_ours_tau10": 0.905,
+    "french": {
+      "marginal": [
+        0.912,
+        [
+          0.866,
+          0.946
+        ],
+        216
+      ],
+      "lang_cond_na": "see linear; transformer uses class/marginal here"
+    },
+    "tau_sweep": [
+      {
+        "tau": 0,
+        "infra": 0.895,
+        "overall": 0.907,
+        "set": 2.684
+      },
+      {
+        "tau": 5,
+        "infra": 0.421,
+        "overall": 0.905,
+        "set": 2.112
+      },
+      {
+        "tau": 10,
+        "infra": 0.421,
+        "overall": 0.905,
+        "set": 2.106
+      },
+      {
+        "tau": 20,
+        "infra": 0.421,
+        "overall": 0.905,
+        "set": 2.101
+      },
+      {
+        "tau": 50,
+        "infra": 0.368,
+        "overall": 0.905,
+        "set": 2.098
+      },
+      {
+        "tau": 100,
+        "infra": 0.368,
+        "overall": 0.905,
+        "set": 2.096
+      },
+      {
+        "tau": "inf",
+        "infra": 0.368,
+        "overall": 0.908,
+        "set": 2.111
+      }
+    ],
+    "paired_f1_vs_student": {
+      "delta_mean": 0.033,
+      "ci95": [
+        0.0058,
+        0.0668
+      ],
+      "frac_transformer_better": 0.9933
+    }
+  }
+}

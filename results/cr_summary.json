@@ -1,0 +1,92 @@
+{
+  "cross_backbone_infrastructure": [
+    {
+      "backbone": "Distilled linear (ours)",
+      "marginal_infra_cov": 0.526,
+      "marginal_ci95": [
+        0.289,
+        0.756
+      ],
+      "classcond_infra_cov": 0.895,
+      "classcond_ci95": [
+        0.669,
+        0.987
+      ]
+    },
+    {
+      "backbone": "DistilBERT (135M)",
+      "marginal_infra_cov": 0.316,
+      "marginal_ci95": [
+        0.126,
+        0.566
+      ],
+      "classcond_infra_cov": 1.0,
+      "classcond_ci95": [
+        0.824,
+        1.0
+      ]
+    },
+    {
+      "backbone": "mBERT (178M)",
+      "marginal_infra_cov": 0.0,
+      "marginal_ci95": [
+        0.0,
+        0.176
+      ],
+      "classcond_infra_cov": 0.947,
+      "classcond_ci95": [
+        0.74,
+        0.999
+      ]
+    },
+    {
+      "backbone": "XLM-R (278M)",
+      "marginal_infra_cov": 0.421,
+      "marginal_ci95": [
+        0.203,
+        0.665
+      ],
+      "classcond_infra_cov": 0.947,
+      "classcond_ci95": [
+        0.74,
+        0.999
+      ]
+    }
+  ],
+  "energy_co2": {
+    "assumptions": "CPU TDP 65.0W, GPU TDP 450.0W, grid 0.4 kgCO2/kWh; same-host CPU latency; 1e6 msgs/day scenario. RAPL not exposed on host so energy is modelled, but latency is same-host so the RATIO is hardware-independent.",
+    "distilled_linear_ours": {
+      "cpu_latency_ms": 0.013,
+      "energy_mJ_per_msg": 0.845,
+      "kwh_per_day_at_1M": 0.00023,
+      "co2_kg_per_year_at_1M": 0.03,
+      "macro_f1": 0.4669
+    },
+    "mBERT": {
+      "cpu_latency_ms": 2387.41,
+      "energy_mJ_per_msg": 155181.65,
+      "kwh_per_day_at_1M": 43.10601,
+      "co2_kg_per_year_at_1M": 6293.48,
+      "train_seconds_gpu": 111.3,
+      "train_energy_kwh": 0.0139,
+      "train_co2_kg": 0.0056,
+      "macro_f1": 0.4814
+    },
+    "XLM-R": {
+      "cpu_latency_ms": 2281.69,
+      "energy_mJ_per_msg": 148309.85,
+      "kwh_per_day_at_1M": 41.19718,
+      "co2_kg_per_year_at_1M": 6014.79,
+      "train_seconds_gpu": 128.9,
+      "train_energy_kwh": 0.0161,
+      "train_co2_kg": 0.0064,
+      "macro_f1": 0.4752
+    },
+    "ratio_mBERT_over_linear": 183647.0
+  },
+  "baseline_accuracy": {
+    "distilled_linear_ours": 0.4669,
+    "mBERT": 0.4814,
+    "XLM-R": 0.4752
+  }
+}

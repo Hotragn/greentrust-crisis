@@ -1,0 +1,45 @@
+{
+  "splits": {
+    "train": 14435,
+    "calib": 6562,
+    "test": 5250
+  },
+  "calib_per_class": {
+    "not_related": 1579,
+    "weather_disaster": 1827,
+    "aid_request": 1752,
+    "infrastructure": 24,
+    "other_related": 1380
+  },
+  "test_per_class": {
+    "not_related": 1264,
+    "weather_disaster": 1462,
+    "aid_request": 1401,
+    "infrastructure": 19,
+    "other_related": 1104
+  },
+  "teacher": {
+    "acc": 0.5236190476190477,
+    "macro_f1": 0.40867884592752024,
+    "macro_f1_ci95": [
+      0.3981,
+      0.4189
+    ]
+  },
+  "student_hard": {
+    "acc": 0.6034285714285714,
+    "macro_f1": 0.4535230959828622,
+    "macro_f1_ci95": [
+      0.4435,
+      0.4642
+    ]
+  },
+  "student_distilled": {
+    "acc": 0.5931428571428572,
+    "macro_f1": 0.46687052450715294,
+    "macro_f1_ci95": [
+      0.4496,
+      0.4873
+    ]
+  }
+}

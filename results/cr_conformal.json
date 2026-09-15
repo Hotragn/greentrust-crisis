@@ -1,0 +1,529 @@
+{
+  "alpha": 0.1,
+  "target": 0.9,
+  "calib_per_class": {
+    "not_related": 1579,
+    "weather_disaster": 1827,
+    "aid_request": 1752,
+    "infrastructure": 24,
+    "other_related": 1380
+  },
+  "marginal": {
+    "overall_coverage": 0.909,
+    "overall_ci95": [
+      0.901,
+      0.917
+    ],
+    "avg_set_size": 2.587,
+    "set_size_ci95": [
+      2.56,
+      2.613
+    ],
+    "singleton_rate": 0.148,
+    "empty_rate": 0.0,
+    "per_class": {
+      "not_related": {
+        "n": 1264,
+        "coverage": 0.945,
+        "ci95": [
+          0.931,
+          0.957
+        ]
+      },
+      "weather_disaster": {
+        "n": 1462,
+        "coverage": 0.883,
+        "ci95": [
+          0.865,
+          0.899
+        ]
+      },
+      "aid_request": {
+        "n": 1401,
+        "coverage": 0.926,
+        "ci95": [
+          0.912,
+          0.94
+        ]
+      },
+      "infrastructure": {
+        "n": 19,
+        "coverage": 0.526,
+        "ci95": [
+          0.289,
+          0.756
+        ]
+      },
+      "other_related": {
+        "n": 1104,
+        "coverage": 0.888,
+        "ci95": [
+          0.868,
+          0.906
+        ]
+      }
+    },
+    "per_lang": {
+      "en": {
+        "n": 3636,
+        "coverage": 0.922,
+        "ci95": [
+          0.913,
+          0.931
+        ]
+      },
+      "fr": {
+        "n": 216,
+        "coverage": 0.861,
+        "ci95": [
+          0.808,
+          0.904
+        ]
+      },
+      "ht": {
+        "n": 1391,
+        "coverage": 0.881,
+        "ci95": [
+          0.863,
+          0.898
+        ]
+      }
+    }
+  },
+  "class_conditional": {
+    "overall_coverage": 0.907,
+    "overall_ci95": [
+      0.899,
+      0.915
+    ],
+    "avg_set_size": 3.029,
+    "set_size_ci95": [
+      3.0,
+      3.057
+    ],
+    "singleton_rate": 0.098,
+    "empty_rate": 0.0,
+    "per_class": {
+      "not_related": {
+        "n": 1264,
+        "coverage": 0.896,
+        "ci95": [
+          0.878,
+          0.913
+        ]
+      },
+      "weather_disaster": {
+        "n": 1462,
+        "coverage": 0.917,
+        "ci95": [
+          0.902,
+          0.931
+        ]
+      },
+      "aid_request": {
+        "n": 1401,
+        "coverage": 0.895,
+        "ci95": [
+          0.878,
+          0.911
+        ]
+      },
+      "infrastructure": {
+        "n": 19,
+        "coverage": 0.895,
+        "ci95": [
+          0.669,
+          0.987
+        ]
+      },
+      "other_related": {
+        "n": 1104,
+        "coverage": 0.922,
+        "ci95": [
+          0.905,
+          0.937
+        ]
+      }
+    },
+    "per_lang": {
+      "en": {
+        "n": 3636,
+        "coverage": 0.912,
+        "ci95": [
+          0.903,
+          0.921
+        ]
+      },
+      "fr": {
+        "n": 216,
+        "coverage": 0.87,
+        "ci95": [
+          0.818,
+          0.912
+        ]
+      },
+      "ht": {
+        "n": 1391,
+        "coverage": 0.899,
+        "ci95": [
+          0.882,
+          0.915
+        ]
+      }
+    }
+  },
+  "language_conditional": {
+    "overall_coverage": 0.911,
+    "overall_ci95": [
+      0.903,
+      0.919
+    ],
+    "avg_set_size": 2.564,
+    "set_size_ci95": [
+      2.538,
+      2.588
+    ],
+    "singleton_rate": 0.144,
+    "empty_rate": 0.0,
+    "per_class": {
+      "not_related": {
+        "n": 1264,
+        "coverage": 0.939,
+        "ci95": [
+          0.924,
+          0.952
+        ]
+      },
+      "weather_disaster": {
+        "n": 1462,
+        "coverage": 0.893,
+        "ci95": [
+          0.876,
+          0.909
+        ]
+      },
+      "aid_request": {
+        "n": 1401,
+        "coverage": 0.924,
+        "ci95": [
+          0.908,
+          0.937
+        ]
+      },
+      "infrastructure": {
+        "n": 19,
+        "coverage": 0.474,
+        "ci95": [
+          0.244,
+          0.711
+        ]
+      },
+      "other_related": {
+        "n": 1104,
+        "coverage": 0.896,
+        "ci95": [
+          0.876,
+          0.913
+        ]
+      }
+    },
+    "per_lang": {
+      "en": {
+        "n": 3636,
+        "coverage": 0.909,
+        "ci95": [
+          0.899,
+          0.918
+        ]
+      },
+      "fr": {
+        "n": 216,
+        "coverage": 0.935,
+        "ci95": [
+          0.894,
+          0.964
+        ]
+      },
+      "ht": {
+        "n": 1391,
+        "coverage": 0.914,
+        "ci95": [
+          0.899,
+          0.929
+        ]
+      }
+    },
+    "lang_qhat": {
+      "en": 0.8216,
+      "ht": 0.8429,
+      "fr": 0.8567
+    }
+  },
+  "concept_conditional": {
+    "overall_coverage": 0.909,
+    "overall_ci95": [
+      0.901,
+      0.916
+    ],
+    "avg_set_size": 2.566,
+    "set_size_ci95": [
+      2.54,
+      2.591
+    ],
+    "singleton_rate": 0.136,
+    "empty_rate": 0.0,
+    "per_class": {
+      "not_related": {
+        "n": 1264,
+        "coverage": 0.896,
+        "ci95": [
+          0.878,
+          0.913
+        ]
+      },
+      "weather_disaster": {
+        "n": 1462,
+        "coverage": 0.917,
+        "ci95": [
+          0.902,
+          0.931
+        ]
+      },
+      "aid_request": {
+        "n": 1401,
+        "coverage": 0.906,
+        "ci95": [
+          0.89,
+          0.921
+        ]
+      },
+      "infrastructure": {
+        "n": 19,
+        "coverage": 0.474,
+        "ci95": [
+          0.244,
+          0.711
+        ]
+      },
+      "other_related": {
+        "n": 1104,
+        "coverage": 0.922,
+        "ci95": [
+          0.905,
+          0.937
+        ]
+      }
+    },
+    "per_lang": {
+      "en": {
+        "n": 3636,
+        "coverage": 0.914,
+        "ci95": [
+          0.905,
+          0.923
+        ]
+      },
+      "fr": {
+        "n": 216,
+        "coverage": 0.875,
+        "ci95": [
+          0.823,
+          0.916
+        ]
+      },
+      "ht": {
+        "n": 1391,
+        "coverage": 0.899,
+        "ci95": [
+          0.882,
+          0.915
+        ]
+      }
+    }
+  },
+  "ontology_hierarchical_ours": {
+    "overall_coverage": 0.906,
+    "overall_ci95": [
+      0.898,
+      0.914
+    ],
+    "avg_set_size": 2.684,
+    "set_size_ci95": [
+      2.655,
+      2.71
+    ],
+    "singleton_rate": 0.13,
+    "empty_rate": 0.0,
+    "per_class": {
+      "not_related": {
+        "n": 1264,
+        "coverage": 0.896,
+        "ci95": [
+          0.878,
+          0.913
+        ]
+      },
+      "weather_disaster": {
+        "n": 1462,
+        "coverage": 0.917,
+        "ci95": [
+          0.902,
+          0.931
+        ]
+      },
+      "aid_request": {
+        "n": 1401,
+        "coverage": 0.895,
+        "ci95": [
+          0.878,
+          0.911
+        ]
+      },
+      "infrastructure": {
+        "n": 19,
+        "coverage": 0.684,
+        "ci95": [
+          0.434,
+          0.874
+        ]
+      },
+      "other_related": {
+        "n": 1104,
+        "coverage": 0.922,
+        "ci95": [
+          0.905,
+          0.937
+        ]
+      }
+    },
+    "per_lang": {
+      "en": {
+        "n": 3636,
+        "coverage": 0.911,
+        "ci95": [
+          0.901,
+          0.92
+        ]
+      },
+      "fr": {
+        "n": 216,
+        "coverage": 0.87,
+        "ci95": [
+          0.818,
+          0.912
+        ]
+      },
+      "ht": {
+        "n": 1391,
+        "coverage": 0.899,
+        "ci95": [
+          0.882,
+          0.915
+        ]
+      }
+    },
+    "shrinkage_lambda": {
+      "not_related": 0.969,
+      "weather_disaster": 0.973,
+      "aid_request": 0.972,
+      "infrastructure": 0.324,
+      "other_related": 0.965
+    },
+    "tau": 50.0
+  },
+  "ding_clustered": {
+    "overall_coverage": 0.911,
+    "overall_ci95": [
+      0.903,
+      0.918
+    ],
+    "avg_set_size": 2.655,
+    "set_size_ci95": [
+      2.628,
+      2.682
+    ],
+    "singleton_rate": 0.13,
+    "empty_rate": 0.0,
+    "per_class": {
+      "not_related": {
+        "n": 1264,
+        "coverage": 0.935,
+        "ci95": [
+          0.92,
+          0.948
+        ]
+      },
+      "weather_disaster": {
+        "n": 1462,
+        "coverage": 0.878,
+        "ci95": [
+          0.86,
+          0.894
+        ]
+      },
+      "aid_request": {
+        "n": 1401,
+        "coverage": 0.914,
+        "ci95": [
+          0.898,
+          0.928
+        ]
+      },
+      "infrastructure": {
+        "n": 19,
+        "coverage": 0.684,
+        "ci95": [
+          0.434,
+          0.874
+        ]
+      },
+      "other_related": {
+        "n": 1104,
+        "coverage": 0.928,
+        "ci95": [
+          0.911,
+          0.942
+        ]
+      }
+    },
+    "per_lang": {
+      "en": {
+        "n": 3636,
+        "coverage": 0.922,
+        "ci95": [
+          0.913,
+          0.931
+        ]
+      },
+      "fr": {
+        "n": 216,
+        "coverage": 0.87,
+        "ci95": [
+          0.818,
+          0.912
+        ]
+      },
+      "ht": {
+        "n": 1391,
+        "coverage": 0.886,
+        "ci95": [
+          0.869,
+          0.903
+        ]
+      }
+    },
+    "clusters": {
+      "not_related": 0,
+      "weather_disaster": 0,
+      "aid_request": 0,
+      "infrastructure": 1,
+      "other_related": 1
+    }
+  },
+  "method_note_R2_9": {
+    "score_overall_coverage": 0.909,
+    "aps_overall_coverage": 0.968,
+    "aps_avg_set": 3.789,
+    "explanation": "APS is conservative on a 5-class label space (its cumulative-mass rule overshoots), so APS over-covers (~0.96) versus the score rule (~0.91, near the 0.90 target). Table 4 used APS; reporting the score rule (or noting APS's known conservativeness) removes the puzzle."
+  }
+}
