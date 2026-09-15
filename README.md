@@ -96,9 +96,12 @@ timed on the same host, so no row in it is compared across machines.
   title     = {GreenTrust-Crisis: Ontology-Grounded, Group-Conditional Conformal
                Prediction for Trustworthy Multilingual Crisis Triage},
   author    = {Pettugani, Hotragn and Pettugani, Tirdesh},
-  booktitle = {Artificial Intelligence: Towards Sustainable Intelligence (AI4S 2026)},
+  booktitle = {Proceedings of the 4th International Conference on Artificial
+               Intelligence Towards Sustainable Intelligence (AI4S-2026)},
+  series    = {Communications in Computer and Information Science},
   publisher = {Springer},
-  year      = {2026}
+  year      = {2026},
+  note      = {Accepted, to appear}
 }
 ```
 
